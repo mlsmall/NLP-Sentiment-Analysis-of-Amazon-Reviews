@@ -1,5 +1,7 @@
 # Language Modeling & Sentiment Analysis of Amazon Product Reviews
 
+![jpg](reviews.jpg)
+
 For this project we'll train a sentiment classifier using a dataset that consists of Amazon reviews. The goal of this classifier is to predict the user sentiment (review score from 1 to 5) based on one or more given sentences.
 
 This is a Natural Language Processing (NLP) problem. First we will build a language model that is capable of predicting the next word in a sentence. Then we will use the language model to build a sentiment classifier.
