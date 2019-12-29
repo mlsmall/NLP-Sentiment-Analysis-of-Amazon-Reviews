@@ -1,5 +1,7 @@
 # Language Modeling & Sentiment Analysis of Amazon Product Reviews
 
+![jpg](reviews.jpg)
+
 For this project we'll train a sentiment classifier using a dataset that consists of Amazon reviews. The goal of this classifier is to predict the user sentiment (review score from 1 to 5) based on one or more given sentences.
 
 This is a Natural Language Processing (NLP) problem. First we will build a language model that is capable of predicting the next word in a sentence. Then we will use the language model to build a sentiment classifier.
@@ -97,7 +99,7 @@ path.ls()
 
 
 
-### Trainig Dataset
+### Training Dataset
 
 
 ```python
@@ -105,23 +107,6 @@ train_df = pd.read_csv(path/'train.csv', header=None, names=['Rating', 'Title', 
 train_df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -190,23 +175,6 @@ valid_df = pd.read_csv(path/'test.csv', header=None, names=['Rating', 'Title', '
 valid_df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
