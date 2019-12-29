@@ -97,7 +97,7 @@ path.ls()
 
 
 
-### Trainig Dataset
+### Training Dataset
 
 
 ```python
@@ -105,23 +105,6 @@ train_df = pd.read_csv(path/'train.csv', header=None, names=['Rating', 'Title', 
 train_df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -190,23 +173,6 @@ valid_df = pd.read_csv(path/'test.csv', header=None, names=['Rating', 'Title', '
 valid_df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
