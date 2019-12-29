@@ -1,6 +1,6 @@
 # Language Modeling & Sentiment Analysis of Amazon Product Reviews
 
-<img src="https://github.com/mlsmall/Sentiment-Analysis-of-Amazon-Reviews/blob/master/reviews.jpg width="200" />
+<img src="https://github.com/mlsmall/Sentiment-Analysis-of-Amazon-Reviews/blob/master/reviews.jpg" width="200" />
 
 For this project we'll train a sentiment classifier using a dataset that consists of Amazon reviews. The goal of this classifier is to predict the user sentiment (review score from 1 to 5) based on one or more given sentences.
 
