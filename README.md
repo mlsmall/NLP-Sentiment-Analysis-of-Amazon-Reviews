@@ -1093,4 +1093,4 @@ learn_c.predict("Works as expected.")
 
 ## Try it yourself
 
-You can run this model yourself by using the jupyter notebook [here](https://github.com/mlsmall/NLP-Sentiment-Analysis-of-Amazon-Reviews/blob/master/Sentiment%20Analysis%20of%20Amazon%20Reviews.ipynb). You will need a GPU to run it.  I ran this notebook with an Nvidia P4 GPU and it took 10+ hours of training.
+You can run this model yourself by using the jupyter notebook [here](https://github.com/mlsmall/NLP-Sentiment-Analysis-of-Amazon-Reviews/blob/master/Sentiment%20Analysis%20of%20Amazon%20Reviews.ipynb). You will need a GPU to run it.  I ran this notebook with an Nvidia Tesla P4 GPU and it took 10+ hours of training.
