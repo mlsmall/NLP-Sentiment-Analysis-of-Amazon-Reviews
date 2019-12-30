@@ -1007,7 +1007,7 @@ learn_c.predict("I really loved that shirt, it fit perfectly.")
 
 
 
-The program outputs the category, which is the review score, and a tensor with the probabilities of for each score.
+The program outputs the category, which is the review score, and a tensor with the probabilities for each score.
 
 In this case, the program outputs a review score of 5, which is what we would expect for a review of *\"I really loved that shirt\"*.
 
@@ -1090,3 +1090,5 @@ learn_c.predict("Works as expected.")
 
 
 *\"Works as expected."* is a positive review, but not as positive as someone who *loved* the product.  A score of 4 came in first with a probability of 66%, and a score of 5 came second with 25%.
+
+You can run this model yourself by using the jupyter notebook [here](https://github.com/mlsmall/NLP-Sentiment-Analysis-of-Amazon-Reviews/blob/master/Sentiment%20Analysis%20of%20Amazon%20Reviews.ipynb). You will need a GPU to run it.  I trained this notebook with an NVIDA P4 GPU.
