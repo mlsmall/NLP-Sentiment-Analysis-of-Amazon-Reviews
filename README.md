@@ -4,13 +4,13 @@
 
 In this project I train a sentiment classifier using a dataset that consists of Amazon reviews. The goal of this classifier is to predict the user sentiment (review score from 1 to 5) based on one or more given sentences.
 
-This is a Natural Language Processing (NLP) problem. First I build a language model that is capable of predicting the next word in a sentence. Then I will use this language model to build a sentiment classifier.
+This is a Natural Language Processing (NLP) problem. First I build a language model that is capable of predicting the next word in a sentence. Then I use this language model to build the sentiment classifier.
 
 ## Language Model and Sentiment Classifier
 
 In order to build the classifier, we first create a language model using an NLP technique called [transfer learning](https://www.aclweb.org/anthology/N19-5004/).  During transfer learning, we use an existing model that was trained on a bigger dataset.  The dataset used is a cleaned subset of Wikipedia called [Wikitext-103](https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/), which is a collection of over 100 million tokens extracted from articles on Wikipedia. 
 
-The Wikitext dataset has been trained with a deep learning model to guess what the next word in a sentence is, with its input being all the words that precede it. The model uses a [recurrent neural network architecture](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNN) that includes a hidden state that is updated each time it sees a new word. The [hidden state](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) contains information about the sentence from the previous words up to that point. 
+The Wikitext dataset has been trained with a deep learning model that predicts what the next word in a sentence is, with its input being all the words that precede it. The model uses a [recurrent neural network architecture](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNN), which includes a hidden state that is updated each time it sees a new word. The [hidden state](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) contains information about the sentence from all the previous words up to that point. 
 
 This dataset will be used along with the Amazon reviews dataset to create the **language model**. The Wikitext model already understands the English language, but only the type that is used in Wikipedia.  So this model is [fine-tuned](https://blog.fastforwardlabs.com/2018/12/28/finetuning-for-natural-language-processing.html) with the Amazon dataset so that it learns the type of English used in Amazon reviews. The final language model learns the version of the English language fine-tuned to the style we want and creates a vocabulary that will be used to then build the sentiment classifier.
 
