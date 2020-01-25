@@ -315,7 +315,7 @@ data_lm.show_batch()
 </table>
 
 
-Let's look at the samples. A text is composed of words, and we can't apply mathematical functions to them directly. We first have to convert them to numbers so we fan feed them to our Neural Network. This is done in two different steps: tokenization and numericalization. Above, in the column "text", every word you see is actually a token.
+Let's look at the samples. A text is composed of words, and we can't apply mathematical functions to them directly. We first have to convert them to numbers so we can feed them to our Neural Network. This is done in two different steps: tokenization and numericalization. Above, in the column "text", every word you see is actually a token.
 
 ## Tokenization
 
