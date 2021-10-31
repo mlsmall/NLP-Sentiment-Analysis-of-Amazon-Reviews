@@ -449,7 +449,7 @@ learn_lm.load('lm-fit_1');
 
 ### Fine Tuning
 
-The language model has achieved an accuracy of 28.1%, but this can be improved. Previously, by default, the model was trained with its initial layers frozen, since the weights for those layers were already pre-trained.
+The language model achieved an accuracy of 28.1%, but this can be improved. Previously, by default, the model was trained with its initial layers frozen, since the weights for those layers were already pre-trained.
 
 Now we will unfreeze all the layers in the model and train again. We launch a new training with more epochs.
 
@@ -543,7 +543,7 @@ learn_lm.load('lm-fine_tuned');
 
 ### Language Model Predictions
 
-How good is our model? Well let's try to see what it predicts after a few given words. To evaluate the language model, we run the `learn_lm.predict` method by specifying an input string and the number of tokens we want it to guess.
+How good is our model? Well let's try to see what it predicts after a few given words. To evaluate the language model, we run the `learn_lm.predict` method by specifying an input string and the number of word tokens we want it to guess.
 
 
 ```python
@@ -602,7 +602,7 @@ data_clas = TextClasDataBunch.from_df(path, train_df=train_df, valid_df=valid_df
 
 
 
- Again, since this line took a bit of time, we'll save it so we can load it in the future.
+Since running the previous command took a bit of time, we'll save it so we can load it in the future.
 
 
 ```python
@@ -976,7 +976,7 @@ learn_c.fit_one_cycle(5, slice(1e-3/(2.6**4), 1e-3), moms=(0.8,0.7))
 </table>
 
 
-Even though the accuracy is only 60%, you will see below that the classifier is very accurate.  The reason why it's only 60% here is because many times an Amazon review with the same sentiment in words will result in different review scores.
+Even though the accuracy is only 60%, you will see below that the classifier is very accurate.  The reason why it's only 60% here is because many times an Amazon review with the same sentiment will result in different review scores.
 
 For example, for a written review of *\"I liked this product\"*, the most likely review score would be a 4.  But different reviewers would have chosen either a 4 or a 5 for the score.  Even though most reviews that use the word *like* will tend to produce a score if 4, there are still many reviewers who just *liked* a product but they scored it a 5 or even a 3 in some cases.
 
@@ -984,7 +984,7 @@ Likewise, for a written review of "*This product was OK*", you will have real re
 
 If this model solved a binary classification problem where it would **only** have to guess between a "yes" or a "no" for *\"I liked the product\"* or *\"I didn't like the product\"*, the accuracy percentage that you would see here would be around the mid 90's. 
 
-So you will not see a high accuracy score against a validation set when you have 5 different sentiment classes because real humans will sometimes give different review scores for the same sentiment, but the predicted score for this model will be fairly accurate when we input our own text string.
+So you will not see a high accuracy score against a validation set when you have 5 different sentiment classes because real humans will sometimes give different review scores for the same sentiment. Nevertheless, the predicted score for this model will be fairly accurate when we input our own text string.
 
 
 ```python
