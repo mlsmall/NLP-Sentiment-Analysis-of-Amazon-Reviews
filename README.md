@@ -81,7 +81,7 @@ The files train.csv and test.csv contain the training and testing samples as com
 
 ## Creating a DataBunch
 
-We will create a text databunch, which is a data object for the language model (data_lm) by using the [data block API](https://docs.fast.ai/data_block.html) from fastai.
+We will create a text databunch, which is a data object for the language model (data_lm) by using the [data block API](https://docs.fast.ai/data.block.html) from fastai.
 
 First, we'll use the [pandas library](https://en.wikipedia.org/wiki/Pandas_(software)) to import the dataset into our model and create a [Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html). A training dataset will be created using the file "train.csv" and a validation dataset will be created using the file "test.csv". The original dataset has 3,000,000 training samples and 650,000 testing samples but for the purposes of saving training time, we will use one third of the data.  As you will see by the end of this model, using 1,000,000+ reviews of data is more than enough to get an accurate sentiment classifier.
 
