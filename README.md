@@ -46,7 +46,7 @@ torch.cuda.is_available()
 
 The dataset can be accessed from the [Standford Snap website](http://snap.stanford.edu/data/web-Amazon.html) . The data spans a period of 18 years, including approximately 35 million reviews from 1995 to March 2013. Reviews include product and user information, ratings, and a plaintext review.
 
-The Amazon reviews dataset was constructed by randomly taking 600,000 training samples and 130,000 testing samples for each review score from 1 to 5. This is a classification problem where each numerical review score is a class. Therefore, there will be 5 classes.  In total there are 3,000,000 training samples and 650,000 testing samples.
+The Amazon reviews dataset was constructed by randomly taking 3,000,000 training samples and 650,000 testing samples for each review score from 1 to 5. This is a classification problem where each numerical review score is a class. Therefore, there will be 5 classes.
 
 ## Preparing the data
 
